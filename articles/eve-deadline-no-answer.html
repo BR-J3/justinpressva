@@ -1,1 +1,281 @@
-the full html content here would be too long, but in practice
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eve. A Deadline. No Answer. — Justin Press VA</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: #F5F1EB;
+      color: #1a1a1a;
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* HEADER */
+    header {
+      border-bottom: 3px solid #1a1a1a;
+      background: #F5F1EB;
+    }
+    .header-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 20px 24px 0;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      color: #888;
+      text-transform: uppercase;
+    }
+    .masthead-name {
+      font-family: 'Georgia', serif;
+      font-size: 36px;
+      font-weight: 900;
+      text-align: center;
+      letter-spacing: -0.01em;
+      padding: 14px 0 8px;
+    }
+    .masthead-rule {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 6px 0;
+    }
+    .masthead-line { flex: 1; height: 1px; background: #1a1a1a; }
+    .masthead-sub {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      color: #888;
+      text-transform: uppercase;
+    }
+    nav {
+      display: flex;
+      gap: 24px;
+      padding: 10px 0;
+      border-top: 1px solid #d4cfc8;
+      margin-top: 10px;
+    }
+    nav a {
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #1a1a1a;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 2px;
+      transition: border-color 0.15s;
+    }
+    nav a:hover { border-bottom-color: #C0392B; text-decoration: none; }
+
+    /* ARTICLE */
+    .article-wrap {
+      max-width: 680px;
+      margin: 48px auto;
+      padding: 0 24px 80px;
+    }
+    .back-link {
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #C0392B;
+      display: inline-block;
+      margin-bottom: 32px;
+    }
+    .back-link:hover { text-decoration: underline; }
+
+    .article-date {
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      color: #888;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .article-thread {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      color: #1A5276;
+      text-transform: uppercase;
+      border: 1px solid #1A5276;
+      display: inline-block;
+      padding: 3px 8px;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-family: 'Georgia', serif;
+      font-size: 34px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 28px;
+      letter-spacing: -0.01em;
+    }
+    .article-body p {
+      margin-bottom: 22px;
+      color: #2c2c2c;
+    }
+    .article-body p strong {
+      font-weight: bold;
+    }
+    .deadline-block {
+      background: #1a1a1a;
+      color: #F5F1EB;
+      padding: 16px 20px;
+      margin: 32px 0;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .deadline-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #C0392B;
+      flex-shrink: 0;
+    }
+    .signoff {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #d4cfc8;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      color: #888;
+      letter-spacing: 0.06em;
+    }
+    .catchphrase {
+      font-style: italic;
+      font-size: 16px;
+      color: #555;
+      margin: 32px 0 8px;
+      font-family: 'Georgia', serif;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 3px solid #1a1a1a;
+      background: #1a1a1a;
+      color: #F5F1EB;
+      padding: 20px 24px;
+    }
+    .footer-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .footer-name {
+      font-family: 'Georgia', serif;
+      font-size: 16px;
+      font-weight: 900;
+    }
+    .footer-meta {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      color: #666;
+      text-transform: uppercase;
+    }
+    .footer-email {
+      font-family: 'Courier New', monospace;
+      font-size: 10px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="header-top">
+        <span>Southside Virginia — Est. 2026</span>
+        <span>Independent Accountability Journalism</span>
+        <span>justinpressva@proton.me</span>
+      </div>
+      <div class="masthead-name">Justin Press VA</div>
+      <div class="masthead-rule">
+        <div class="masthead-line"></div>
+        <span class="masthead-sub">The Public Record Is The Public Record</span>
+        <div class="masthead-line"></div>
+      </div>
+      <nav>
+        <a href="https://br-j3.github.io/justinpressva/index.html">Home</a>
+        <a href="https://br-j3.github.io/justinpressva/index.html#coverage">Coverage</a>
+        <a href="https://br-j3.github.io/justinpressva/index.html#about">About</a>
+        <a href="https://br-j3.github.io/justinpressva/index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="article-wrap">
+
+    <a class="back-link" href="https://br-j3.github.io/justinpressva/index.html">← Back to Homepage</a>
+
+    <div class="article-date">May 26, 2026</div>
+    <div class="article-thread">🐾 Eve / DAHS — Post 9</div>
+
+    <h1>Eve. A Deadline. No Answer.</h1>
+
+    <div class="article-body">
+
+      <p>Eve was a 12-year-old dog surrendered to the Danville Area Humane Society on April 10, 2026. She had a microchip — registered to the Lynchburg Humane Society, who had placed her with her adopting family in November 2025. DAHS staff scanned her three times and reported no registration found. Lynchburg Humane Society located the registration in five minutes. Eve was euthanized on April 28, 2026. Lynchburg was never called.</p>
+
+      <div class="deadline-block">
+        <div class="deadline-dot"></div>
+        <span>Records retention deadline: <strong>May 28, 2026 — Thursday</strong></span>
+      </div>
+
+      <p>On May 22, Justin Press VA identified a specific date in Virginia's records retention schedule governing animal shelter intake and euthanasia documentation. That date is May 28, 2026 — two days from today. A press inquiry was submitted to Senator Bill Stanley's office referencing that deadline directly.</p>
+
+      <p>No response has been received.</p>
+
+      <p>DAHS has not responded. The City of Danville has not responded. Senator Stanley's office has not responded.</p>
+
+      <p>Senator Stanley reviewed hundreds of pages of DAHS documentation. He stated publicly that his office was taking action. He pledged legislation. He said he would work to shut down DAHS unless improvements were made. His office has not stated publicly — as of today — whether the records he reviewed, or the records still held by DAHS, will be preserved past Thursday.</p>
+
+      <p>That is not an accusation. It is the documented gap in the public record as of May 26, 2026.</p>
+
+      <p>The City of Danville, through City Manager Ken Larking, previously stated that DAHS leadership had kept the city informed from the outset and that the city's contract with DAHS remains in good standing. The city has not addressed records retention.</p>
+
+      <p>On Thursday, May 28, one of two things will be true. Either the records that document what happened to Eve — and every animal whose intake followed the same process — will be preserved. Or they will not. The public will know which by the presence or absence of a documented response.</p>
+
+      <p class="catchphrase">The public record is the public record. Make of it what you will.</p>
+
+    </div>
+
+    <div class="signoff">
+      — Justin Case<br />
+      Justin Press VA<br />
+      Independent Accountability Journalism · Southside Virginia — Est. 2026
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-name">JUSTIN PRESS VA</div>
+      <div class="footer-meta">Martinsville · Southside Virginia · Documented. Sourced. Public Record.</div>
+      <div class="footer-email">justinpressva@proton.me</div>
+    </div>
+  </footer>
+
+</body>
+</html>
