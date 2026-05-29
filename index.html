@@ -1,1 +1,152 @@
-<html> placeholder for now to get SHA but no
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Justin Press VA — Independent Accountability Journalism</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--black:#0a0a0a;--white:#f5f0e8;--accent:#c0392b;--light-gray:#888}
+html{scroll-behavior:smooth}
+body{background-color:var(--white);color:var(--black);font-family:'Playfair Display',Georgia,serif;font-size:1rem;line-height:1.6}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent)}
+
+/* MASTHEAD */
+.masthead{border-bottom:4px solid var(--black);background:var(--white)}
+.masthead-top{background:var(--black);color:var(--white);display:flex;justify-content:space-between;align-items:center;padding:6px 24px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em}
+.masthead-tag{color:var(--accent);font-weight:500}
+.masthead-main{padding:28px 40px 16px;display:flex;align-items:center;gap:0}
+.masthead-rule-left,.masthead-rule-right{flex:1;height:1px;background:var(--black)}
+.masthead-title{text-align:center;padding:0 24px}
+.masthead-name{font-family:'Playfair Display',serif;font-size:42px;font-weight:900;letter-spacing:-0.01em;line-height:1}
+.masthead-name span{color:var(--accent)}
+.masthead-sub{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;color:var(--light-gray);text-transform:uppercase;margin-top:6px}
+.masthead-nav{padding:10px 40px;display:flex;gap:32px;border-top:1px solid #ddd}
+.masthead-nav a{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase}
+.masthead-nav a:hover{color:var(--accent)}
+
+/* LAYOUT */
+.page-wrap{max-width:900px;margin:0 auto;padding:48px 24px 80px}
+
+/* FEATURED */
+.featured-label{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.featured-article{border-top:3px solid var(--black);padding:28px 0 32px;margin-bottom:48px}
+.featured-date{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--light-gray);margin-bottom:8px}
+.featured-thread{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);display:inline-block;padding:3px 8px;margin-bottom:14px}
+.featured-title{font-family:'Playfair Display',serif;font-size:32px;font-weight:900;line-height:1.2;margin-bottom:12px}
+.featured-title a:hover{color:var(--accent)}
+.featured-lede{font-size:1.05rem;line-height:1.7;color:#333;margin-bottom:16px}
+.read-more{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);border-bottom:1px solid var(--accent);padding-bottom:2px}
+
+/* ARTICLE LIST */
+.section-label{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--light-gray);border-bottom:1px solid #ccc;padding-bottom:8px;margin-bottom:24px}
+.article-list{display:flex;flex-direction:column;gap:0}
+.article-item{border-top:1px solid #ddd;padding:20px 0}
+.article-item:last-child{border-bottom:1px solid #ddd}
+.article-item-date{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--light-gray);margin-bottom:6px}
+.article-item-thread{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);display:inline-block;padding:2px 7px;margin-bottom:10px}
+.article-item-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;line-height:1.25;margin-bottom:8px}
+.article-item-title a:hover{color:var(--accent)}
+.article-item-lede{font-size:0.95rem;line-height:1.65;color:#444}
+
+/* ABOUT */
+.about-section{margin-top:56px;border-top:3px solid var(--black);padding-top:28px}
+.about-text{font-size:0.95rem;line-height:1.75;color:#333;max-width:620px}
+.about-text p{margin-bottom:16px}
+.about-contact{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;margin-top:20px;color:var(--light-gray)}
+
+/* FOOTER */
+footer{background:var(--black);color:var(--white);padding:20px 24px;margin-top:60px}
+.footer-inner{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.footer-brand{font-family:'Playfair Display',serif;font-size:16px;font-weight:900}
+.footer-brand span{color:var(--accent)}
+.footer-tagline{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#666}
+
+@media(max-width:600px){
+.masthead-main{padding:20px 16px 12px}
+.masthead-name{font-size:30px}
+.masthead-nav{padding:10px 16px;gap:20px}
+.page-wrap{padding:32px 16px 60px}
+.featured-title{font-size:26px}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <span class="masthead-tag">Independent Accountability Journalism</span>
+    <span>Southside Virginia</span>
+    <span>justinpressva@proton.me</span>
+  </div>
+  <div class="masthead-main">
+    <div class="masthead-rule-left"></div>
+    <div class="masthead-title">
+      <div class="masthead-name">Justin <span>Press</span> VA</div>
+      <div class="masthead-sub">The Public Record Is The Public Record</div>
+    </div>
+    <div class="masthead-rule-right"></div>
+  </div>
+  <nav class="masthead-nav">
+    <a href="#latest">Latest</a>
+    <a href="#coverage">Coverage</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<div class="page-wrap">
+
+  <!-- FEATURED -->
+  <div class="featured-label">Latest</div>
+  <div class="featured-article" id="latest">
+    <div class="featured-date">May 26, 2026</div>
+    <div class="featured-thread">🐾 Eve / DAHS</div>
+    <div class="featured-title"><a href="articles/eve-deadline-no-answer.html">Eve. A Deadline. No Answer.</a></div>
+    <p class="featured-lede">The records retention deadline has passed. DAHS has not responded. The City of Danville has not responded. Senator Stanley reviewed hundreds of records and launched a formal review. That is not an accusation. It is the public record.</p>
+    <a class="read-more" href="articles/eve-deadline-no-answer.html">Read →</a>
+  </div>
+
+  <!-- ARCHIVE -->
+  <div class="section-label" id="coverage">All Coverage</div>
+  <div class="article-list">
+
+    <div class="article-item">
+      <div class="article-item-date">May 22, 2026</div>
+      <div class="article-item-thread">🐾 Eve / DAHS</div>
+      <div class="article-item-title"><a href="articles/eve-dahs-microchip-deadline.html">Eve. A Microchip. A Deadline.</a></div>
+      <p class="article-item-lede">Eve was a 12-year-old dog surrendered to the Danville Area Humane Society. She was microchipped. She was euthanized before her owner could claim her. Virginia's records retention clock is running.</p>
+    </div>
+
+    <div class="article-item">
+      <div class="article-item-date">May 22, 2026</div>
+      <div class="article-item-thread">⚡ AEP / Henry County</div>
+      <div class="article-item-title"><a href="articles/appalachian-power-patriot-centre-ii.html">The Buyer Was Unnamed. The Vote Was Yours.</a></div>
+      <p class="article-item-lede">Henry County's IDA sold 1,200 acres to Appalachian Power. The community asked what the land would be used for. Here is what the public record does show.</p>
+    </div>
+
+  </div>
+
+  <!-- ABOUT -->
+  <div class="about-section" id="about">
+    <div class="section-label">About</div>
+    <div class="about-text">
+      <p>Justin Press VA is independent accountability journalism covering Southside Virginia — Henry County, Martinsville, and the region's public institutions.</p>
+      <p>The work is simple: find what the public record shows, document it accurately, and publish it without spin. Governance, public spending, civic accountability. No advertising. No access journalism. No agenda beyond the record itself.</p>
+      <p>— Justin Case<br>Justin Press VA</p>
+    </div>
+    <div class="about-contact">justinpressva@proton.me</div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Justin <span>Press</span> VA</div>
+    <div class="footer-tagline">Martinsville, Virginia · Independent Accountability Journalism</div>
+  </div>
+</footer>
+
+</body>
+</html>
