@@ -1,77 +1,78 @@
+<!-- updated June 2 2026 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Justin Press VA — Independent Accountability Journalism</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--black:#0a0a0a;--white:#f5f0e8;--accent:#c0392b;--light-gray:#888}
-html{scroll-behavior:smooth}
-body{background-color:var(--white);color:var(--black);font-family:'Playfair Display',Georgia,serif;font-size:1rem;line-height:1.6}
-a{color:inherit;text-decoration:none}
-a:hover{color:var(--accent)}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Justin Press VA — Independent Accountability Journalism</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--black:#0a0a0a;--white:#f5f0e8;--accent:#c0392b;--light-gray:#888}
+    html{scroll-behavior:smooth}
+    body{background-color:var(--white);color:var(--black);font-family:'Playfair Display',Georgia,serif;font-size:1rem;line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    a:hover{color:var(--accent)}
 
-/* MASTHEAD */
-.masthead{border-bottom:4px solid var(--black);background:var(--white)}
-.masthead-top{background:var(--black);color:var(--white);display:flex;justify-content:space-between;align-items:center;padding:6px 24px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em}
-.masthead-tag{color:var(--accent);font-weight:500}
-.masthead-main{padding:28px 40px 16px;display:flex;align-items:center;gap:0}
-.masthead-rule-left,.masthead-rule-right{flex:1;height:1px;background:var(--black)}
-.masthead-title{text-align:center;padding:0 24px}
-.masthead-name{font-family:'Playfair Display',serif;font-size:42px;font-weight:900;letter-spacing:-0.01em;line-height:1}
-.masthead-name span{color:var(--accent)}
-.masthead-sub{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;color:var(--light-gray);text-transform:uppercase;margin-top:6px}
-.masthead-nav{padding:10px 40px;display:flex;gap:32px;border-top:1px solid #ddd}
-.masthead-nav a{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase}
-.masthead-nav a:hover{color:var(--accent)}
+    /* MASTHEAD */
+    .masthead{border-bottom:4px solid var(--black);background:var(--white)}
+    .masthead-top{background:var(--black);color:var(--white);display:flex;justify-content:space-between;align-items:center;padding:6px 24px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em}
+    .masthead-tag{color:var(--accent);font-weight:500}
+    .masthead-main{padding:28px 40px 16px;display:flex;align-items:center;gap:0}
+    .masthead-rule-left,.masthead-rule-right{flex:1;height:1px;background:var(--black)}
+    .masthead-title{text-align:center;padding:0 24px}
+    .masthead-name{font-family:'Playfair Display',serif;font-size:42px;font-weight:900;letter-spacing:-0.01em;line-height:1}
+    .masthead-name span{color:var(--accent)}
+    .masthead-sub{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;color:var(--light-gray);text-transform:uppercase;margin-top:6px}
+    .masthead-nav{padding:10px 40px;display:flex;gap:32px;border-top:1px solid #ddd}
+    .masthead-nav a{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase}
+    .masthead-nav a:hover{color:var(--accent)}
 
-/* LAYOUT */
-.page-wrap{max-width:900px;margin:0 auto;padding:48px 24px 80px}
+    /* LAYOUT */
+    .page-wrap{max-width:900px;margin:0 auto;padding:48px 24px 80px}
 
-/* FEATURED */
-.featured-label{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
-.featured-article{border-top:3px solid var(--black);padding:28px 0 32px;margin-bottom:48px}
-.featured-date{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--light-gray);margin-bottom:8px}
-.featured-thread{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);display:inline-block;padding:3px 8px;margin-bottom:14px}
-.featured-title{font-family:'Playfair Display',serif;font-size:32px;font-weight:900;line-height:1.2;margin-bottom:12px}
-.featured-title a:hover{color:var(--accent)}
-.featured-lede{font-size:1.05rem;line-height:1.7;color:#333;margin-bottom:16px}
-.read-more{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);border-bottom:1px solid var(--accent);padding-bottom:2px}
+    /* FEATURED */
+    .featured-label{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+    .featured-article{border-top:3px solid var(--black);padding:28px 0 32px;margin-bottom:48px}
+    .featured-date{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--light-gray);margin-bottom:8px}
+    .featured-thread{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);display:inline-block;padding:3px 8px;margin-bottom:14px}
+    .featured-title{font-family:'Playfair Display',serif;font-size:32px;font-weight:900;line-height:1.2;margin-bottom:12px}
+    .featured-title a:hover{color:var(--accent)}
+    .featured-lede{font-size:1.05rem;line-height:1.7;color:#333;margin-bottom:16px}
+    .read-more{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);border-bottom:1px solid var(--accent);padding-bottom:2px}
 
-/* ARTICLE LIST */
-.section-label{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--light-gray);border-bottom:1px solid #ccc;padding-bottom:8px;margin-bottom:24px}
-.article-list{display:flex;flex-direction:column;gap:0}
-.article-item{border-top:1px solid #ddd;padding:20px 0}
-.article-item:last-child{border-bottom:1px solid #ddd}
-.article-item-date{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--light-gray);margin-bottom:6px}
-.article-item-thread{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);display:inline-block;padding:2px 7px;margin-bottom:10px}
-.article-item-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;line-height:1.25;margin-bottom:8px}
-.article-item-title a:hover{color:var(--accent)}
-.article-item-lede{font-size:0.95rem;line-height:1.65;color:#444}
+    /* ARTICLE LIST */
+    .section-label{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--light-gray);border-bottom:1px solid #ccc;padding-bottom:8px;margin-bottom:24px}
+    .article-list{display:flex;flex-direction:column;gap:0}
+    .article-item{border-top:1px solid #ddd;padding:20px 0}
+    .article-item:last-child{border-bottom:1px solid #ddd}
+    .article-item-date{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--light-gray);margin-bottom:6px}
+    .article-item-thread{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);display:inline-block;padding:2px 7px;margin-bottom:10px}
+    .article-item-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;line-height:1.25;margin-bottom:8px}
+    .article-item-title a:hover{color:var(--accent)}
+    .article-item-lede{font-size:0.95rem;line-height:1.65;color:#444}
 
-/* ABOUT */
-.about-section{margin-top:56px;border-top:3px solid var(--black);padding-top:28px}
-.about-text{font-size:0.95rem;line-height:1.75;color:#333;max-width:620px}
-.about-text p{margin-bottom:16px}
-.about-contact{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;margin-top:20px;color:var(--light-gray)}
+    /* ABOUT */
+    .about-section{margin-top:56px;border-top:3px solid var(--black);padding-top:28px}
+    .about-text{font-size:0.95rem;line-height:1.75;color:#333;max-width:620px}
+    .about-text p{margin-bottom:16px}
+    .about-contact{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.08em;margin-top:20px;color:var(--light-gray)}
 
-/* FOOTER */
-footer{background:var(--black);color:var(--white);padding:20px 24px;margin-top:60px}
-.footer-inner{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
-.footer-brand{font-family:'Playfair Display',serif;font-size:16px;font-weight:900}
-.footer-brand span{color:var(--accent)}
-.footer-tagline{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#666}
+    /* FOOTER */
+    footer{background:var(--black);color:var(--white);padding:20px 24px;margin-top:60px}
+    .footer-inner{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+    .footer-brand{font-family:'Playfair Display',serif;font-size:16px;font-weight:900}
+    .footer-brand span{color:var(--accent)}
+    .footer-tagline{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#666}
 
-@media(max-width:600px){
-.masthead-main{padding:20px 16px 12px}
-.masthead-name{font-size:30px}
-.masthead-nav{padding:10px 16px;gap:20px}
-.page-wrap{padding:32px 16px 60px}
-.featured-title{font-size:26px}
-}
-</style>
+    @media(max-width:600px){
+      .masthead-main{padding:20px 16px 12px}
+      .masthead-name{font-size:30px}
+      .masthead-nav{padding:10px 16px;gap:20px}
+      .page-wrap{padding:32px 16px 60px}
+      .featured-title{font-size:26px}
+    }
+  </style>
 </head>
 <body>
 
@@ -111,6 +112,41 @@ footer{background:var(--black);color:var(--white);padding:20px 24px;margin-top:6
   <!-- ARCHIVE -->
   <div class="section-label" id="coverage">All Coverage</div>
   <div class="article-list">
+
+    <div class="article-item">
+      <div class="article-item-date">June 2, 2026</div>
+      <div class="article-item-thread">🏚 Northview Gardens</div>
+      <div class="article-item-title"><a href="articles/northview-post-5.html">What the Record Shows: Who Owns Northview Gardens?</a></div>
+      <p class="article-item-lede">Henry County's own parcel records identify a current property owner that cannot be verified as a legally registered entity in any jurisdiction searched.</p>
+    </div>
+
+    <div class="article-item">
+      <div class="article-item-date">May 27, 2026</div>
+      <div class="article-item-thread">🏚 Northview Gardens</div>
+      <div class="article-item-title"><a href="articles/northview-post-4.html">755 Stultz Road Has More to Say</a></div>
+      <p class="article-item-lede">Five civil cases. Five unanswered inquiries. A resident on record. The court history and ownership structure of Northview Gardens Apartments.</p>
+    </div>
+
+    <div class="article-item">
+      <div class="article-item-date">May 11, 2026</div>
+      <div class="article-item-thread">🏚 Northview Gardens</div>
+      <div class="article-item-title"><a href="articles/northview-post-3.html">755 Stultz Road Has a History</a></div>
+      <p class="article-item-lede">Ten documented incidents spanning a decade at one address. Violence. Infrastructure failures. Two governments. One property.</p>
+    </div>
+
+    <div class="article-item">
+      <div class="article-item-date">May 11, 2026</div>
+      <div class="article-item-thread">🏚 Northview Gardens</div>
+      <div class="article-item-title"><a href="articles/northview-post-2.html">An Update on Northview Gardens Apartments</a></div>
+      <p class="article-item-lede">Since the first post, additional documented incidents have come to light. The timeline now spans four incidents in fifteen months.</p>
+    </div>
+
+    <div class="article-item">
+      <div class="article-item-date">May 11, 2026</div>
+      <div class="article-item-thread">🏚 Northview Gardens</div>
+      <div class="article-item-title"><a href="articles/northview-post-1.html">Two Governments. One Property.</a></div>
+      <p class="article-item-lede">A 100-unit affordable housing complex. Federal dollars. An out-of-state management company. A boundary line running through the complex. Residents in the middle.</p>
+    </div>
 
     <div class="article-item">
       <div class="article-item-date">May 28, 2026</div>
